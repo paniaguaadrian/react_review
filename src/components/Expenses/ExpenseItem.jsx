@@ -1,3 +1,6 @@
+// React Components
+import React from "react";
+
 // Custom Components
 import Card from "../UI/Card";
 import ExpenseDate from "./ExpenseDate";
