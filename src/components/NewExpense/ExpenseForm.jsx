@@ -4,7 +4,7 @@ import React, { useState } from "react";
 // Styles
 import "./ExpenseForm.css";
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
@@ -54,7 +54,7 @@ const ExpenseForm = () => {
       date: new Date(enteredDate),
     };
 
-    console.log(expenseData);
+    props.onSaveExpenseData(expenseData);
 
     // Reset form after submit. This will need the value prop on each input pointing to the first state of each one to reset it when the component runs again after the button click.
     setEnteredTitle("");
