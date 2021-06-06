@@ -1,5 +1,5 @@
 // Custom Components
-import Card from "./Card";
+import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItem";
 
 // Styles
